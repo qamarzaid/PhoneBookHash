@@ -30,7 +30,8 @@ class HashingDemo:
 				ostatus= True
 				self.num+=1
 			else:
-				print("Collision has occured for Telephone Number "+ str(element) + "at position "+ str(pos))
+				print("Collision has occured for Telephone Number "+
+				str(element) + "at position "+ str(pos))
 				pos=self.LinearProb(element,pos)
 				self.Hashtable[pos]=element
 				ostatus=True
@@ -57,7 +58,8 @@ class HashingDemo:
 				ostatus= True
 				self.num+=1
 			else:
-				print("Collision has occured for Telephone Number "+ str(element)+ "at position "+ str(pos))
+				print("Collision has occured for Telephone Number "+ 
+				str(element)+ "at position "+ str(pos))
 				ostatus,pos=self.QuadProb(element,pos) ###
 				if ostatus:
 					self.Hashtable[pos]=element
