@@ -1,11 +1,11 @@
 ### Phone Book
+# work in progress....
 
 ```python
 
 
-def linear(size):
-	#print("---------Linear Probing----------")
-	#size=int(input("Enter the size of hash table : "))
+def linear(size): #function for linear probing
+
 	hashL=["_"]*size
 	for i in range (0,size):
 		
@@ -28,7 +28,6 @@ def linear(size):
 			pass
 	return hashL
 
-#linear()
 
 
 
@@ -48,9 +47,6 @@ def Quad(size):
 				newpos=pos
 				
 				i=1
-				#newpos=((pos+(i**2))% size)
-				#print("pos",pos)
-				#print("newpos",newpos)
 				while( hashQ[newpos]!="_") :
 					newpos=((pos+(i**2))%size)
 					#print("newpos",newpos)
@@ -73,8 +69,8 @@ def display():
 	sizeL=int(input("Enter the size of hash table : "))
 	lp=linear(sizeL)
 	print(lp)
-	#print("---------Quadratic Probing----------")
-	#sizeQ=int(input("Enter size of the Hash Table: "))
+	print("---------Quadratic Probing----------")
+	sizeQ=int(input("Enter size of the Hash Table: "))
 
 	#print(Quad(sizeQ))
 	#searchL(lp,sizeL)
