@@ -4,7 +4,7 @@
 ```python
 
 
-def linear(size): #function for linear probing
+def linear(size): 		#function for linear probing
 
 	hashL=["_"]*size
 	for i in range (0,size):
@@ -31,7 +31,7 @@ def linear(size): #function for linear probing
 
 
 
-def Quad(size):
+def Quad(size): 		#function for qaudratic probing
 	
 	hashQ=["_"]* size
 
