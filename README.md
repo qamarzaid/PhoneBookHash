@@ -64,7 +64,7 @@ def Quad(size): 		#function for qaudratic probing
 
 
 
-def display():
+def display():    	#function to display
 	print("---------Linear Probing----------")
 	sizeL=int(input("Enter the size of hash table : "))
 	lp=linear(sizeL)
