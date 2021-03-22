@@ -94,6 +94,18 @@ def searchL(list, size):
 					break
 ```
 ##### Function for displaying phonebook
+```python
+def display():
+	print("---------Linear Probing----------")
+	sizeL=int(input("Enter the size of hash table : "))
+	lp=linear(sizeL)
+	print(lp)
+	#print("---------Quadratic Probing----------")
+	#sizeQ=int(input("Enter size of the Hash Table: "))
 
+	#print(Quad(sizeQ))
+	searchL(lp,sizeL)
+display()
+```
 	
 
