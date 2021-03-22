@@ -3,7 +3,7 @@
 
 ```python
 
-
+# function for creating phonebook using linear probing
 def linear(size):
 	
 	hashL=["_"]*size
