@@ -30,31 +30,6 @@ def linear(size):
 
 
 
-def Quad(size): 		#function for qaudratic probing
-	
-	hashQ=["_"]* size
-
-	for i in range(0,size):
-		ele=int(input("Enter Number: "))
-		if ele>0:
-			pos= ele%size
-			if (hashQ[pos]=="_"):
-				hashQ[pos]=ele
-			else:
-				print("Collision Occured Resolving by Quadratic Probing")
-
-				newpos=pos
-				
-				i=1
-				while( hashQ[newpos]!="_") :
-					newpos=((pos+(i**2))%size)
-					#print("newpos",newpos)
-					i=i+1
-				hashQ[newpos]=ele
-		else:
-			pass
-
-	return hashQ
 
 	
 
