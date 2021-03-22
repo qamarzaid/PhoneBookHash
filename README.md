@@ -61,7 +61,37 @@ def Quad(size):
 
 	return hashQ
 ```
+##### Function for searching phone number linear probing hashtable
+```python
+def searchL(list, size):
+	key=(input("Enter No. To search"))
+	pos= int(key) %size
+	count=0
+	if list[pos]==key:
+		count=count+1
+		print (" up Contact Found At ", pos )
+		print("Number of comparision Done", count)
+		
+	elif list[pos]!=key:
+		i=0
+		
+		newpos=pos
+		for j in range(i,size):
+			count=count+1
 
+			if list[newpos]==key:
+				print("down Contact Found At ", newpos)
+				print("Number of comparision Done", count)
+				break
+			else:
+				newpos=(newpos+i)%size
+
+				i=i+1
+				#print(newpos)
+				#print(i)
+				if(i>=size):
+					print("Contact Not Found")
+					break
 
 	
 
