@@ -4,14 +4,14 @@
 ```python
 
 
-def linear(size): 		#function for linear probing
-
+def linear(size):
+	
 	hashL=["_"]*size
 	for i in range (0,size):
 		
-		ele=int(input("Enter the Number: "))
-		if ele>0:
-			pos=ele % size
+		ele=(input("Enter the Number: "))
+		if int(ele)>0:
+			pos=int(ele) % size
 			if (hashL[pos]=="_"):
 				hashL[pos]=ele
 			else:
@@ -27,7 +27,6 @@ def linear(size): 		#function for linear probing
 		else:
 			pass
 	return hashL
-
 
 
 
