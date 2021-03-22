@@ -31,6 +31,36 @@ def linear(size):
 	return hashL
 ```
 
+```python
+def Quad(size):
+	
+	hashQ=["_"]* size
+
+	for i in range(0,size):
+		ele=(input("Enter Number: "))
+		if int(ele)>0:
+			pos= int(ele)%size
+			if (hashQ[pos]=="_"):
+				hashQ[pos]=ele
+			else:
+				print("Collision Occured Resolving by Quadratic Probing")
+
+				newpos=pos
+				
+				i=1
+				#newpos=((pos+(i**2))% size)
+				#print("pos",pos)
+				#print("newpos",newpos)
+				while( hashQ[newpos]!="_") :
+					newpos=((pos+(i**2))%size)
+					#print("newpos",newpos)
+					i=i+1
+				hashQ[newpos]=ele
+		else:
+			pass
+
+	return hashQ
+
 
 
 	
