@@ -1,9 +1,11 @@
 ### Phone Book
 # work in progress....
 
+#### Code:
+#####  Function for creating phonebook using linear probing
 ```python
 
-# function for creating phonebook using linear probing
+
 def linear(size):
 	
 	hashL=["_"]*size
@@ -27,7 +29,7 @@ def linear(size):
 		else:
 			pass
 	return hashL
-
+```
 
 
 
