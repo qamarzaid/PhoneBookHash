@@ -97,18 +97,3 @@ def searchL(list, size):
 
 	
 
-
-
-
-
-
-def display():    	#function to display
-	print("---------Linear Probing----------")
-	sizeL=int(input("Enter the size of hash table : "))
-	lp=linear(sizeL) 		#calling linear probing function
-	print(lp)
-	print("---------Quadratic Probing----------")
-	sizeQ=int(input("Enter size of the Hash Table: "))
-	qp=Quad(sizeQ)			#calling quadratic probing function
-	
-display()
