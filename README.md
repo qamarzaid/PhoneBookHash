@@ -30,7 +30,7 @@ def linear(size):
 			pass
 	return hashL
 ```
-
+#####  Function for creating phonebook using Quadratic probing
 ```python
 def Quad(size):
 	
@@ -60,7 +60,7 @@ def Quad(size):
 			pass
 
 	return hashQ
-
+```
 
 
 	
