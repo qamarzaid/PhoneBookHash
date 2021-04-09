@@ -1,6 +1,6 @@
 ### Phone Book
 # work in progress....
-123
+12
 #### Code:
 #####  Function for creating phonebook using linear probing
 ```python
