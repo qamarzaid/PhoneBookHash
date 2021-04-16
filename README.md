@@ -1,5 +1,5 @@
 ### Phone Book
-# work in progr
+# work in prog
 #### Code:
 #####  Function for creating phonebook using linear probing
 ```python
